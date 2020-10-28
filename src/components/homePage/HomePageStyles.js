@@ -4,7 +4,7 @@ const StyledHomePage = styled.div`
 	background: ${(pr) => pr.theme.white};
 	.home-banner {
 		/* border: 1px solid red; */
-		height: 90vh;
+		height: 75vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -42,7 +42,7 @@ const StyledHomePage = styled.div`
 		display: flex;
 		flex-flow: row nowrap;
 		justify-content: space-around;
-		margin: 30rem 0;
+		margin: 30rem 0 30rem 0;
 		a {
 			font-size: 7.2rem;
 			text-decoration: underline;

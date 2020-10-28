@@ -5,6 +5,7 @@ const StyledHeader = styled.header`
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
+	margin: 0 0 15rem 0;
 	background-color: ${(pr) => pr.theme.white};
 	nav {
 		display: flex;
