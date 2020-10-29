@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 import { BrowserRouter as Router } from 'react-router-dom';
+import ScrollToTop from './ScrollToTop';
 //reset
 import './styles/reset.css';
 //general styles
@@ -13,9 +14,11 @@ import App from './App';
 
 render(
 	<Router>
-		<ThemeProvider theme={theme}>
-			<App />
-		</ThemeProvider>
+		<ScrollToTop>
+			<ThemeProvider theme={theme}>
+				<App />
+			</ThemeProvider>
+		</ScrollToTop>
 	</Router>,
 	document.querySelector('#root')
 );
