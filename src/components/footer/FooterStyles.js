@@ -7,6 +7,7 @@ const StyledFooter = styled.footer`
 	justify-content: space-between;
 	margin: 15rem 0 0 0;
 	color: ${(pr) => pr.theme.black};
+	text-transform: lowercase;
 	div {
 		/* border: 1px solid green; */
 		display: flex;
@@ -14,12 +15,12 @@ const StyledFooter = styled.footer`
 		align-items: flex-start;
 	}
 	a {
+		font-size: 1.8rem;
 		text-decoration: underline;
 		font-weight: 500;
-		color: ${(pr) => pr.theme.black};
-		&:hover {
-			color: ${(pr) => pr.theme.seaGreen};
-		}
+	}
+	p {
+		font-size: 1.8rem;
 	}
 	@media (max-width: ${(pr) => pr.theme.phone}) {
 		flex-flow: column nowrap;

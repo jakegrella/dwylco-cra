@@ -1,11 +1,22 @@
 body {
 	font-family: neue-haas-grotesk-display, sans-serif;
 	font-style: normal;
-	background-color: #f9fdff;
+	background-color: #ffffff;
+}
+body::-webkit-scrollbar {
+	width: 0.5rem;
+}
+body::-webkit-scrollbar-track {
+	background-color: #ffffff;
+}
+body::-webkit-scrollbar-thumb {
+	background-color: #000000;
+	border-radius: 10px;
 }
 
+/*
 .container {
-	/* border: 1px solid blue; */
+	border: 1px solid blue;
 	padding: 5rem 2rem;
 	max-width: 120rem;
 	margin: 0 auto;
@@ -36,10 +47,11 @@ a {
 	font-weight: 600;
 	text-decoration: none;
 }
+
 button {
 	font-size: 1.8rem;
 	font-weight: 600;
 }
 svg {
 	font-size: 1.8rem;
-}
+} */

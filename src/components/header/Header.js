@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 //logo
-import logo from '../../assets/jgLogoSG.svg';
+import logo from '../../assets/jakegrella-copyright.svg';
 //style
 import StyledHeader from './HeaderStyles';
 //svg social icons

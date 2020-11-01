@@ -31,9 +31,10 @@ const StyledHomePage = styled.div`
 			width: 24rem;
 			background-color: ${(pr) => pr.theme.white};
 			color: ${(pr) => pr.theme.black};
+			text-transform: lowercase;
 			&:hover {
-				color: ${(pr) => pr.theme.seaGreen};
-				border-color: ${(pr) => pr.theme.seaGreen};
+				color: ${(pr) => pr.theme.babyBlue};
+				border-color: ${(pr) => pr.theme.babyBlue};
 			}
 		}
 	}
@@ -46,13 +47,10 @@ const StyledHomePage = styled.div`
 		a {
 			font-size: 7.2rem;
 			text-decoration: underline;
-			color: ${(pr) => pr.theme.black};
-			&:hover {
-				color: ${(pr) => pr.theme.seaGreen};
-			}
 		}
 		p {
 			width: 15%;
+			font-size: 1.8rem;
 		}
 	}
 	@media (max-width: ${(pr) => pr.theme.tablet}) {

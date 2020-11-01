@@ -1,6 +1,8 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
 // components
+import StyledApp from './AppStyles';
+
 import Header from '../src/components/header/Header';
 import Footer from '../src/components/footer/Footer';
 import HomePage from '../src/components/homePage/HomePage';
@@ -9,7 +11,7 @@ import AboutPage from '../src/components/aboutPage/AboutPage';
 
 export default function App() {
 	return (
-		<div className='container'>
+		<StyledApp>
 			<Header />
 
 			<Route exact path='/about'>
@@ -23,6 +25,6 @@ export default function App() {
 			</Route>
 
 			<Footer />
-		</div>
+		</StyledApp>
 	);
 }

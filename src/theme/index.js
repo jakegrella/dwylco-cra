@@ -1,6 +1,7 @@
 export default {
-	white: '#F9FDFF',
-	black: '#040910',
+	white: '#FFFFFF',
+	black: '#000000',
+	// black: '#040910',
 	neonYellow: '#FFFF01',
 	neonGreen: '#dbfc00',
 	neonBlue: '#08F7FE',
@@ -8,6 +9,7 @@ export default {
 	pink: '#FFDEF3',
 	seaGreen: '#046062',
 	lightSeaGreen: '#057476',
+	babyBlue: '#46C3FD',
 	tablet: '768px',
 	phone: '400px',
 };
