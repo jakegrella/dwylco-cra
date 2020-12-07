@@ -1,4 +1,4 @@
-export default {
+const theme = {
 	white: '#FFFFFF',
 	black: '#000000',
 	// black: '#040910',
@@ -13,3 +13,5 @@ export default {
 	tablet: '768px',
 	phone: '400px',
 };
+
+export default theme;

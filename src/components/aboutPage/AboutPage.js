@@ -9,16 +9,16 @@ export default function AboutPage() {
 				<div className='about-top-imgAndLinks'>
 					<img src={avatar} alt='jake grella' />
 					<div className='about-top-links'>
-						<a href='' target='blank'>
+						<a href='/' target='blank'>
 							resume
 						</a>
-						<a href='' target='blank'>
+						<a href='/' target='blank'>
 							github
 						</a>
-						<a href='' target='blank'>
+						<a href='/' target='blank'>
 							linkedin
 						</a>
-						<a href='' target='blank'>
+						<a href='/' target='blank'>
 							twitter
 						</a>
 					</div>
