@@ -3,7 +3,7 @@ import StyledProjectCard from './ProjectCardStyles';
 import { FaLink, FaGithub, FaJsSquare, FaReact } from 'react-icons/fa';
 
 export default function ProjectCard(props) {
-	const { imgURL, imgAlt, title, icon, description } = props;
+	const { imgURL, imgAlt, title, icon, description, gitHubLink } = props;
 	return (
 		<>
 			<StyledProjectCard className='project-card'>
@@ -16,7 +16,7 @@ export default function ProjectCard(props) {
 							<a href='https://jakegrella.com' target='blank'>
 								<FaLink />
 							</a>
-							<a href='https://github.com/jakegrella' target='blank'>
+							<a href={gitHubLink} target='blank'>
 								<FaGithub />
 							</a>
 						</div>

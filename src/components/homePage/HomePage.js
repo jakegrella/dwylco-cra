@@ -15,23 +15,22 @@ export default function HomePage() {
 			<section className='project-cards-section'>
 				<ProjectCard
 					imgURL='https://images.unsplash.com/photo-1557682257-2f9c37a3a5f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60'
-					imgAlt='example project 1'
-					title='Example Project 1'
-					description='This project serves as a placeholder only. I did not take the image. Service as core &amp; innovations as power makes
-					our brand post launch upstream selling staff, but turn the ship but
-					out of scope.'
+					imgAlt='evnt'
+					title='{evnt}'
+					description='{evnt} is an event planning app that allows users to plan and join events, add items to a list, and declare if they are attending an event.'
+					gitHubLink='https://github.com/Potluck-planner-bw/frontend/tree/main/potluck-planner'
 				/>
 				<ProjectCard
 					imgURL='https://images.unsplash.com/photo-1557683325-3ba8f0df79de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60'
-					imgAlt='example project 2'
-					title='Example Project 2'
-					description='This project serves as a placeholder only. I did not take the image. Come up with something buzzworthy on-brand but completeley fresh back-end of third quarter for hit the ground running so we need to button up our approach.'
+					imgAlt='expat journal'
+					title='expat journal'
+					description='Expat journal allows users to log in and share pictures and stories of their travels.'
 				/>
 				<ProjectCard
 					imgURL='https://images.unsplash.com/photo-1557682233-43e671455dfa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60'
-					imgAlt='example project 3'
-					title='Example Project 3'
-					description='This project serves as a placeholder only. I did not take the image. Come up with something buzzworthy on-brand but completeley fresh back-end of third quarter for hit the ground running so we need to button up our approach.'
+					imgAlt='covid-19 statistics'
+					title='covid-19 statistics'
+					description='This app accesses corona-api.com to display up to date coronavirus statistics based on location.'
 				/>
 				<Link to='/projects' className='all-projects-btn'>
 					View All Projects
