@@ -15,14 +15,16 @@ export default function Header() {
 	const [clicked, setClicked] = useState(false);
 
 	const handleClick = () => {
-		console.log(clicked);
 		setClicked(!clicked);
+	};
+	const handleLogoClick = () => {
+		setClicked(false);
 	};
 
 	return (
 		<StyledHeader>
 			{/* link is preventing logo from showing */}
-			<Link to='/'>
+			<Link to='/' onClick={handleLogoClick}>
 				<img src={logo} className='logo' alt='Jake Grella' />
 			</Link>
 			<nav className='web-nav'>
@@ -40,25 +42,25 @@ export default function Header() {
 					clicked === true ? 'mobile-nav active' : 'mobile-nav inactive'
 				}
 			>
-				<li>
+				<li onClick={handleClick}>
 					<Link to='/projects'>Projects</Link>
 				</li>
-				<li>
+				<li onClick={handleClick}>
 					<Link to='/about'>About</Link>
 				</li>
-				<li>
+				<li onClick={handleClick}>
 					<a href='https://www.linkedin.com/in/jakegrella/' target='blank'>
 						<LinkedInIcon />
 					</a>
 				</li>
-				<li>
+				<li onClick={handleClick}>
 					<a href='https://twitter.com/jakegrella' target='blank'>
 						<TwitterIcon />
 					</a>
 				</li>
 			</nav>
 			<button onClick={handleClick} className='mobile-nav-button'>
-				<BiMenu />
+				<BiMenu size={24} />
 			</button>
 		</StyledHeader>
 	);

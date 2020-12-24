@@ -67,6 +67,21 @@ const StyledAboutPage = styled.div`
 			}
 		}
 	}
+	@media (max-width: ${(pr) => pr.theme.tablet}) {
+		.about-top {
+			flex-flow: column nowrap;
+			align-items: center;
+			.about-top-imgAndLinks {
+				margin-bottom: 2rem;
+				img {
+					width: 100%;
+				}
+			}
+			.about-top-words {
+				width: 100%;
+			}
+		}
+	}
 `;
 
 export default StyledAboutPage;

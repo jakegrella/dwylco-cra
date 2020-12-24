@@ -4,6 +4,7 @@ const StyledHeader = styled.header`
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
+	align-items: center;
 	margin: 0 0 15rem 0;
 	/* background-color: ${(pr) => pr.theme.white}; */
 	.web-nav {
@@ -20,12 +21,18 @@ const StyledHeader = styled.header`
 	}
 	.mobile-nav {
 		display: none;
+		position: absolute;
+		right: 0;
+		top: 10rem;
+		li {
+			list-style-type: none;
+			line-height: 1.3;
+		}
 	}
 	.mobile-nav-button {
 		display: none;
 		border: none;
 		background: none;
-		font-size: 5rem;
 	}
 	.mobile-nav-button:hover {
 		cursor: pointer;
@@ -38,13 +45,6 @@ const StyledHeader = styled.header`
 			display: none;
 		}
 		.mobile-nav {
-			position: absolute;
-			right: 0;
-			top: 10rem;
-			li {
-				list-style-type: none;
-				line-height: 1.3;
-			}
 		}
 		.mobile-nav-button {
 			display: initial;
