@@ -5,7 +5,7 @@ const StyledProjectCard = styled.div`
 	display: flex;
 	justify-content: center;
 	flex-flow: row nowrap;
-	/* width: 70%; */
+	width: 100%;
 	margin-bottom: 5rem;
 	img {
 		width: 50rem;
@@ -51,9 +51,13 @@ const StyledProjectCard = styled.div`
 		flex-flow: column nowrap;
 		align-items: center;
 		.project-card-words {
-			/* border: 1px solid red; */
 			width: 100%;
 			margin-left: 0;
+		}
+		.inactive {
+			display: none;
+		}
+		.active {
 		}
 	}
 `;
