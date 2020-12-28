@@ -19,7 +19,7 @@ export default function HomePage() {
 					imgURL={project1Img}
 					imgAlt='personal portfolio'
 					title='personal portfolio'
-					description='Portfolio built to hold my web development and software engineering projects. Site is optimized for all screen sizes.'
+					description='Portfolio built to hold my web development and software engineering projects. Site is optimized for all screen sizes and is built on the CRA framework.'
 					demoLink='https://jakegrella.com'
 					gitHubLink='https://github.com/jakegrella/devport-cra'
 				/>
