@@ -31,7 +31,6 @@ const StyledApp = styled.div`
 		font-weight: 600;
 		text-decoration: none;
 		color: ${(pr) => pr.theme.black};
-		margin-right: 1.5rem;
 		&:hover {
 			color: ${(pr) => pr.theme.babyBlue};
 		}

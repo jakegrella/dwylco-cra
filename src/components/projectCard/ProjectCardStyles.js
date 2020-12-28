@@ -16,7 +16,6 @@ const StyledProjectCard = styled.div`
 		/* border: 1px solid red; */
 		display: flex;
 		flex-flow: column nowrap;
-		margin-top: 2rem;
 		width: 40%;
 		margin-left: 5rem;
 		h3 {

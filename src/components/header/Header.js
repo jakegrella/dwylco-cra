@@ -62,6 +62,11 @@ export default function Header() {
 			<button onClick={handleClick} className='mobile-nav-button'>
 				<BiMenu size={24} />
 			</button>
+			<style jsx='true'>{`
+				.web-nav {
+					border: red;
+				}
+			`}</style>
 		</StyledHeader>
 	);
 }

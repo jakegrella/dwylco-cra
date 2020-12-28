@@ -16,7 +16,7 @@ const StyledHeader = styled.header`
 		text-transform: lowercase;
 		a {
 			/* border: 1px solid blue; */
-			margin-right: 1.5rem;
+			margin-left: 1.5rem;
 		}
 	}
 	.mobile-nav {

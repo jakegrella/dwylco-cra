@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import StyledHomePage from './HomePageStyles';
 import ProjectCard from '../projectCard/ProjectCard';
 
+import project1Img from '../../assets/webmock.png';
+
 export default function HomePage() {
 	return (
 		<StyledHomePage>
@@ -14,11 +16,12 @@ export default function HomePage() {
 			</div>
 			<section className='project-cards-section'>
 				<ProjectCard
-					imgURL='https://images.unsplash.com/photo-1557682257-2f9c37a3a5f3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60'
-					imgAlt='evnt'
-					title='{evnt}'
-					description='{evnt} is an event planning app that allows users to plan and join events, add items to a list, and declare if they are attending an event.'
-					gitHubLink='https://github.com/Potluck-planner-bw/frontend/tree/main/potluck-planner'
+					imgURL={project1Img}
+					imgAlt='personal portfolio'
+					title='personal portfolio'
+					description='Portfolio built to hold my web development and software engineering projects. Site is optimized for all screen sizes.'
+					demoLink='https://jakegrella.com'
+					gitHubLink='https://github.com/jakegrella/devport-cra'
 				/>
 				<ProjectCard
 					imgURL='https://images.unsplash.com/photo-1557683325-3ba8f0df79de?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=60'
