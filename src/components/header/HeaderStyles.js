@@ -1,26 +1,38 @@
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
+	/* border: 1px solid red; */
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0 0 15rem 0;
+	margin: 0 0 5rem 0;
+
 	/* background-color: ${(pr) => pr.theme.white}; */
 	.web-nav {
 		display: initial;
 		/* border: 1px solid red; */
 		display: flex;
 		flex-flow: row nowrap;
-		align-items: center;
+		align-items: baseline;
 		text-transform: lowercase;
 		a {
 			/* border: 1px solid blue; */
 			margin-left: 1.5rem;
 		}
+		button {
+			border: none;
+			background: none;
+			margin-left: 1.5rem;
+			padding: 0;
+			:hover {
+				cursor: pointer;
+			}
+		}
 	}
 	.mobile-nav {
 		display: none;
+		/* border: 1px solid red; */
 		position: absolute;
 		right: 0;
 		top: 10rem;

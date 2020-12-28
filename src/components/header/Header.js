@@ -1,14 +1,11 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 //logo
-import logo from '../../assets/jg-logo-svg.svg';
+import logo from '../../assets/dwylco-copyright_1.png';
 //style
 import StyledHeader from './HeaderStyles';
 //svg social icons
-import {
-	FaLinkedinIn as LinkedInIcon,
-	FaTwitter as TwitterIcon,
-} from 'react-icons/fa';
+import { FaShoppingBag, FaUser } from 'react-icons/fa';
 import { BiMenu } from 'react-icons/bi';
 
 export default function Header() {
@@ -25,17 +22,41 @@ export default function Header() {
 		<StyledHeader>
 			{/* link is preventing logo from showing */}
 			<Link to='/' onClick={handleLogoClick}>
-				<img src={logo} className='logo' alt='Jake Grella' />
+				<img src={logo} className='logo' alt='DWYLCO' />
+				<div
+					hidden
+					src='https://cdn.snipcart.com/scripts/2.0/snipcart.js'
+					data-api-key='ZDE3ZThkNGYtY2U0Yi00Y2NjLWIyNzAtYWVkY2EzMzZiNmVjNjM3NDQ0MjMwMjM1Mjk3NDU5'
+					id='snipcart'
+					data-config-modal-style='side'
+				></div>
 			</Link>
 			<nav className='web-nav'>
-				<Link to='/projects'>Projects</Link>
-				<Link to='/about'>About</Link>
-				<a href='https://www.linkedin.com/in/jakegrella/' target='blank'>
-					<LinkedInIcon />
+				<Link to='/community'>community</Link>
+				<Link to='/shop'>shop</Link>
+				<Link to='/about'>about</Link>
+				<a
+					className='snipcart-checkout snipcart-summary'
+					href='/'
+					style={{ textDecoration: 'none' }}
+				>
+					<FaShoppingBag />
+					{/* <span>
+						<span>#items: </span>
+						<span className='snipcart-items-count'>-</span>
+					</span> */}
+					<span>
+						{/* <span>total: </span> */}
+						<span className='snipcart-total-price'></span>
+					</span>
 				</a>
-				<a href='https://twitter.com/jakegrella' target='blank'>
-					<TwitterIcon />
-				</a>
+				<button
+					className='snipcart-customer-signin'
+					href='#'
+					style={{ textDecoration: 'none' }}
+				>
+					<FaUser />
+				</button>
 			</nav>
 			<nav
 				className={
@@ -48,25 +69,36 @@ export default function Header() {
 				<li onClick={handleClick}>
 					<Link to='/about'>About</Link>
 				</li>
-				<li onClick={handleClick}>
-					<a href='https://www.linkedin.com/in/jakegrella/' target='blank'>
-						<LinkedInIcon />
+				<li>
+					<a
+						className='snipcart-checkout snipcart-summary'
+						href='/'
+						style={{ textDecoration: 'none' }}
+					>
+						<FaShoppingBag />
+						{/* <span>
+							<span>#items: </span>
+							<span className='snipcart-items-count'>-</span>
+						</span> */}
+						<span>
+							{/* <span>total: </span> */}
+							<span className='snipcart-total-price'>-</span>
+						</span>
 					</a>
 				</li>
-				<li onClick={handleClick}>
-					<a href='https://twitter.com/jakegrella' target='blank'>
-						<TwitterIcon />
-					</a>
+				<li>
+					<button
+						className='snipcart-customer-signin'
+						href='#'
+						style={{ textDecoration: 'none' }}
+					>
+						<FaUser />
+					</button>
 				</li>
 			</nav>
 			<button onClick={handleClick} className='mobile-nav-button'>
 				<BiMenu size={24} />
 			</button>
-			<style jsx='true'>{`
-				.web-nav {
-					border: red;
-				}
-			`}</style>
 		</StyledHeader>
 	);
 }
