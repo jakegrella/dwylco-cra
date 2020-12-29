@@ -7,7 +7,7 @@ import Header from './components/header/Header';
 // import Footer from '../src/components/footer/Footer';
 import HomePage from './components/homePage/HomePage';
 import CommunityPage from './components/CommunityPage/CommunityPage';
-import AboutPage from './components/AboutPage/AboutPage';
+import AboutPage from './components/aboutPage/AboutPage';
 import ShopPage from './components/ShopPage/ShopPage';
 
 export default function App() {
