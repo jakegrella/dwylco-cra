@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 
 const StyledApp = styled.div`
-	/* border: 1px solid blue; */
-	padding: 5rem 2rem;
-	max-width: 120rem;
+	/* border: 1px solid magenta; */
+	/* padding: 5rem 2rem; */
+	/* max-width: 120rem; */
 	margin: 0 auto;
 
 	h1 {

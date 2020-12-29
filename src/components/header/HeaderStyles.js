@@ -1,12 +1,15 @@
 import styled from 'styled-components';
 
 const StyledHeader = styled.header`
+	position: absolute;
+	background: ${(pr) => pr.theme.white};
+	width: 100vw;
 	/* border: 1px solid red; */
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
 	align-items: center;
-	margin: 0 0 5rem 0;
+	padding: 2rem 2.5rem;
 
 	/* background-color: ${(pr) => pr.theme.white}; */
 	.web-nav {

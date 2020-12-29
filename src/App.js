@@ -6,8 +6,9 @@ import StyledApp from './AppStyles';
 import Header from '../src/components/header/Header';
 // import Footer from '../src/components/footer/Footer';
 import HomePage from '../src/components/homePage/HomePage';
-import ProjectsPage from '../src/components/projectsPage/ProjectsPage';
-import AboutPage from '../src/components/aboutPage/AboutPage';
+import CommunityPage from './components/CommunityPage/CommunityPage';
+import AboutPage from './components/AboutPage/AboutPage';
+import ShopPage from '../src/components/ShopPage/ShopPage';
 
 export default function App() {
 	return (
@@ -15,10 +16,10 @@ export default function App() {
 			<Header />
 
 			<Route exact path='/community'>
-				<ProjectsPage />
+				<CommunityPage />
 			</Route>
 			<Route exact path='/shop'>
-				<ProjectsPage />
+				<ShopPage />
 			</Route>
 			<Route exact path='/about'>
 				<AboutPage />
