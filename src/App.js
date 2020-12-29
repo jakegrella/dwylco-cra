@@ -3,12 +3,12 @@ import { Route } from 'react-router-dom';
 // components
 import StyledApp from './AppStyles';
 
-import Header from '../src/components/header/Header';
+import Header from './components/header/Header';
 // import Footer from '../src/components/footer/Footer';
-import HomePage from '../src/components/homePage/HomePage';
-import CommunityPage from '../src/components/CommunityPage/CommunityPage';
-import AboutPage from '../src/components/AboutPage/AboutPage';
-import ShopPage from '../src/components/ShopPage/ShopPage';
+import HomePage from './components/homePage/HomePage';
+import CommunityPage from './components/CommunityPage/CommunityPage';
+import AboutPage from './components/AboutPage/AboutPage';
+import ShopPage from './components/ShopPage/ShopPage';
 
 export default function App() {
 	return (
