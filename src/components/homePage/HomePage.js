@@ -3,11 +3,12 @@ import { Link } from 'react-router-dom';
 import StyledHomePage from './HomePageStyles';
 
 import ProductCard from '../ProductCard/ProductCard';
+import CommunityCard from '../CommunityCard/CommunityCard';
 
 export default function HomePage() {
 	return (
 		<StyledHomePage>
-			<div className='home-banner'>
+			<section className='home-banner'>
 				<Link to='/shop'>
 					SHOP
 					{/* <img
@@ -22,8 +23,8 @@ export default function HomePage() {
 						alt='loading motorcycle'
 					/> */}
 				</Link>
-			</div>
-			<div className='featured-products'>
+			</section>
+			<section className='featured-products'>
 				<ProductCard
 					productName='Twill Multi Pocket Shirt'
 					imgSrc='https://assets.supremenewyork.com/194019/ma/PrTarCs0FTY.jpg'
@@ -44,7 +45,33 @@ export default function HomePage() {
 					imgSrc='https://assets.supremenewyork.com/194723/ma/bfFXNu5kYfo.jpg'
 					price='$178'
 				/>
-			</div>
+			</section>
+			<section className='featured-community'>
+				<CommunityCard
+					title={`Eminem's Machine Gun Kelly 'Gnat' Subliminal Sets Twitter Ablaze`}
+					author={`Kyle Eustice`}
+					date={`Dec 17, 2020`}
+					imgSrc={`https://static.hiphopdx.com/2020/12/201217-Eminem-900x506.jpg`}
+				/>
+				<CommunityCard
+					title={`Best Rappers of 2020`}
+					author={`Kenan Draughorne`}
+					date={`Dec 24, 2020`}
+					imgSrc={`https://static.hiphopdx.com/2020/12/DX_2020_DXAwards_Best_Rappers_1a-1-640x360.png`}
+				/>
+				<CommunityCard
+					title={`Instagram Flexin: Rich the Kid Sends Famous Dex off to Rehab`}
+					author={`Daniela`}
+					date={`Dec 27, 2020`}
+					imgSrc={`https://static.hiphopdx.com/2016/07/Rich-The-Kid-Famous-Dex-827x620.jpg`}
+				/>
+				<CommunityCard
+					title={`Too $Hort, Ice Cube, Snoop Dogg & E-40 Have Formed a Supergroup`}
+					author={`Kyle Eustice`}
+					date={`Dec 4, 2020`}
+					imgSrc={`https://static.hiphopdx.com/2020/12/201203-Snoop-Dogg-Too-Short-900x506.jpg`}
+				/>
+			</section>
 		</StyledHomePage>
 	);
 }

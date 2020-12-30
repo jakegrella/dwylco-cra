@@ -41,19 +41,38 @@ const StyledHomePage = styled.div`
 	}
 
 	.featured-products {
+		/* border: 2px solid blue; */
 		display: flex;
-		flex-flow: row nowrap;
+		flex-flow: row wrap;
 		justify-content: center;
 		align-items: baseline;
-		margin: 1rem 0;
+		margin: 2rem 0;
 		div {
-			/* border: 2px solid blue; */
 			padding: 1rem;
 		}
 	}
 
+	.featured-community {
+		margin: 2rem;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+		div {
+			/* border: 1px solid red; */
+		}
+	}
+
 	@media (max-width: ${(pr) => pr.theme.tablet}) {
-		/* border: 1px solid green; */
+		.home-banner {
+			/* border: 2px solid green; */
+			flex-flow: column nowrap;
+			a {
+				margin: 0 0 1rem 0;
+			}
+			a:not(:first-child) {
+				margin: 1rem 0 0 0;
+			}
+		}
 	}
 	@media (max-width: ${(pr) => pr.theme.phone}) {
 		/* border: 1px solid green; */

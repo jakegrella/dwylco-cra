@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom';
 import StyledApp from './AppStyles';
 
 import Header from './components/header/Header';
-// import Footer from '../src/components/footer/Footer';
+import Footer from './components/footer/Footer';
 import HomePage from './components/homePage/HomePage';
 import CommunityPage from './components/CommunityPage/CommunityPage';
 import AboutPage from './components/aboutPage/AboutPage';
@@ -28,7 +28,7 @@ export default function App() {
 				<HomePage />
 			</Route>
 
-			{/* <Footer /> */}
+			<Footer />
 		</StyledApp>
 	);
 }
